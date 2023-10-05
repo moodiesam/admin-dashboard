@@ -11,6 +11,14 @@
     background-color: lightblue;
 }
 
+.sidebar-item {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    padding-left: 40px;
+    padding-top: 40px;
+    gap: 30px;
+}
+
 .header {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -20,6 +28,54 @@
 .search,
 .greeting {
     background-color: lightgrey;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-input {
+    background-color: azure;
+    min-width: 100px;
+    max-width: 500px;
+    flex: 1;
+}
+
+.greeting {
+    display: grid;
+    grid-template-columns: 50px 3fr 2fr;
+    align-content: center;
+    gap: 10px;
+}
+
+.greeting-user {
+    display: grid;
+    grid-template-rows: 20px 1fr;
+    align-content: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.greeting-user2 {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.blue-btns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    align-content: center;
+}
+
+button {
+    border-radius: 20px;
+    background-color: blue;
+    color: azure;
+    min-height: 40px;
 }
 
 .main-content {
@@ -35,9 +91,13 @@
     justify-items: center;
 }
 
+.projects-title {
+    margin-left: 40px;
+}
+
 .project {
     min-height: 200px;
-    width: 200px;
+    min-width: 200px;
     background-color: orange;
 }
 
@@ -45,7 +105,7 @@
 .announcements,
 .trending {
     display: grid;
-    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
 }
 
 .right-side {
