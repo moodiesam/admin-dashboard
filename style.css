@@ -21,6 +21,15 @@
     align-items: center;
 }
 
+#sidebar-header .icon {
+    height: 40px;
+    width: 40px;
+}
+
+#sidebar-header .selection {
+    font-size: xx-large;
+}
+
 .icon {
     height: 30px;
     width: 30px;
@@ -56,8 +65,21 @@
 }
 
 .search {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.search-left {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.search-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
 }
 
 .search-input {
@@ -113,7 +135,7 @@ button {
 
 .main-content {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     padding-bottom: 40px;
 }
 
@@ -122,22 +144,30 @@ button {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
-    justify-items: center;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.projects-title {
-    margin-left: 40px;
+    padding-top: 10px;
+    align-items: start;
 }
 
 .project {
     min-height: 200px;
-    min-width: 400px;
+    max-width: 450px;
+    min-width: 250px;
     background-color: #fafaf9;
     background-image: linear-gradient(to right, #f87171 2%, rgba(0,0,0,0) 2%);
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    align-content: space-between;
+}
+
+.project-actions {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    justify-content: end;
+    justify-items: center;
+}
+
+.project-icon {
+    height: 25px;
+    width: auto;
 }
 
 .announcements,
@@ -146,13 +176,18 @@ button {
     grid-template-rows: repeat(auto-fill, 1fr);
 }
 
+.left-side {
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
 .right-side {
     display: grid;
     grid-template-rows: repeat(2, 60px 1fr);
     gap: 10px;
-    padding-right: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px;
 }
 
 .announcements,
@@ -164,10 +199,26 @@ button {
 
 .announcements {
     background-color: #fafaf9;
+    font-size: 14px;
+    padding: 30px;
+}
+
+#bottom-border {
+    border-bottom: lightgrey solid 2px;
 }
 
 .trending {
     background-color: #fafaf9;
+    padding: 30px;
+}
+
+.trend {
+    display: grid;
+    grid-template-columns: 40px 100px;
+    column-gap: 20px;
+    align-items: center;
+    justify-items: start;
+    justify-content: center;
     
 }
 

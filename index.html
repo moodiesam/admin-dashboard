@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <div class="sidebar">   
-            <div class="sidebar-item">
+            <div class="sidebar-item" id="sidebar-header">
                 <img src="images/dashboard.png" alt="shapes" class="icon">
                 <div class="selection"><a href="#">Dashboard</a></div>
             </div>
@@ -55,11 +55,15 @@
 
         <div class="header">
             <div class="search">
-                <img src="images/search.png" alt="magnifying glass" class="search-icon">
-                <input class="search-input" id="search-input" name="search-input" type="text">
-                <img src="images/bell.png" alt="alert bell" class="search-icon">
-                <img src="images/robot-icon.png" alt="robot icon" class="image-icon">
-                <h2>Tim Smith</h2>
+                <div class="search-left">
+                    <img src="images/search.png" alt="magnifying glass" class="search-icon">
+                    <input class="search-input" id="search-input" name="search-input" type="text">
+                </div>
+                <div class="search-right">
+                    <img src="images/bell.png" alt="alert bell" class="search-icon">
+                    <img src="images/robot-icon.png" alt="robot icon" class="image-icon">
+                    <h2>Tim Smith</h2>
+                </div>
             </div>
             <div class="greeting">
                 <img src="images/robot-icon.png" alt="robot icon" class="image-icon">
@@ -76,30 +80,126 @@
         </div>
 
         <div class="main-content">
-            <div>
-                <h2 class="projects-title">Your Projects</h2>
+            <div class="left-side">
+                <h2 class="projects-title">The Project Collection</h2>
                 <div class="projects">
-                    <div class="project">Project 1</div>
-                    <div class="project">Project 2</div>
-                    <div class="project">Project 3</div>
-                    <div class="project">Project 4</div>
-                    <div class="project">Project 5</div>
-                    <div class="project">Project 6</div>
+                    <div class="project">
+                        <div class="project-content">
+                            <h3>Super Awesome Project</h3>
+                            <p>Content will go here... blah blah blah this oine oinafdsd oisandfosainfoasidn fo
+                                asdfkjadnsfasdnf iasdfiu anoifuan iuanf iuasdnf ioasdun faiunf iudfasiudf iuafd 
+                                asdnf fiasdn
+                            </p>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#"><img src="images/star.png" alt="star" class="project-icon"></a>
+                            <a href="#"><img src="images/eye.png" alt="eye" class="project-icon"></a>
+                            <a href="#"><img src="images/share.png" alt="share" class="project-icon"></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-content">
+                            <h3>Party Time Project</h3>
+                            <p>Content will go here... blah blah blah</p>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#"><img src="images/star.png" alt="star" class="project-icon"></a>
+                            <a href="#"><img src="images/eye.png" alt="eye" class="project-icon"></a>
+                            <a href="#"><img src="images/share.png" alt="share" class="project-icon"></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-content">
+                            <h3>Safe Project</h3>
+                            <p>Content will go here... blah blah blah</p>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#"><img src="images/star.png" alt="star" class="project-icon"></a>
+                            <a href="#"><img src="images/eye.png" alt="eye" class="project-icon"></a>
+                            <a href="#"><img src="images/share.png" alt="share" class="project-icon"></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-content">
+                            <h3>Fancy Project</h3>
+                            <p>Content will go here... blah blah blah</p>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#"><img src="images/star.png" alt="star" class="project-icon"></a>
+                            <a href="#"><img src="images/eye.png" alt="eye" class="project-icon"></a>
+                            <a href="#"><img src="images/share.png" alt="share" class="project-icon"></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-content">
+                            <h3>Boring, but Necessary, Project</h3>
+                            <p>Content will go here... blah blah blah</p>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#"><img src="images/star.png" alt="star" class="project-icon"></a>
+                            <a href="#"><img src="images/eye.png" alt="eye" class="project-icon"></a>
+                            <a href="#"><img src="images/share.png" alt="share" class="project-icon"></a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-content">
+                            <h3>Wacky Project</h3>
+                            <p>Content will go here... blah blah blah</p>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#"><img src="images/star.png" alt="star" class="project-icon"></a>
+                            <a href="#"><img src="images/eye.png" alt="eye" class="project-icon"></a>
+                            <a href="#"><img src="images/share.png" alt="share" class="project-icon"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="right-side">
                 <h2 class="announcements-title">Announcements</h2>
                 <div class="announcements">
-                    <div class="announcement">Announcement 1</div>
-                    <div class="announcement">Announcement 2</div>
-                    <div class="announcement">Announcement 3</div>
+                    <div class="announcement" id="bottom-border">
+                        <h3>Announcement title</h3>
+                        <p>Can you believe this announcement!</p>
+                    </div>
+                    <div class="announcement" id="bottom-border">
+                        <h3>Announcement title</h3>
+                        <p>Can you believe this announcement!</p>
+                    </div>
+                    <div class="announcement">
+                        <h3>Announcement title</h3>
+                        <p>Can you believe this announcement! This one is going to be a long one to see what happensssssss</p>
+                    </div>
                 </div>
                 <h2 class="trending-title">Trending</h2>
                 <div class="trending">
-                    <div class="trend">Trend 1</div>
-                    <div class="trend">Trend 2</div>
-                    <div class="trend">Trend 3</div>
-                    <div class="trend">Trend 4</div>
+                    <div class="trend">
+                        <a href="#"><img src="images/robot-icon.png" alt="robot icon" class="image-icon"></a>
+                        <div class="trending-user">
+                            <div>@timsmith</div>
+                        <div>Tim Smith</div>
+                        </div>
+                    </div>
+                    <div class="trend">
+                        <a href="#"><img src="images/monkey.png" alt="robot icon" class="image-icon"></a>
+                        <div class="trending-user">
+                            <div>@ooooahah</div>
+                        <div>Monkey Man</div>
+                        </div>
+                    </div>
+                    <div class="trend">
+                        <a href="#"><img src="images/crow.png" alt="robot icon" class="image-icon"></a>
+                        <div class="trending-user">
+                            <div>@birdlarry</div>
+                        <div>Henry Shrewd</div>
+                        </div>
+                    </div>
+                    <div class="trend">
+                        <a href="#"><img src="images/fox.png" alt="robot icon" class="image-icon"></a>
+                        <div class="trending-user">
+                            <div>@slyguy</div>
+                        <div>Mark McDunn</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
